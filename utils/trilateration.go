@@ -3,6 +3,7 @@ package utils
 import (
     "math"
 	"strings"
+	"github.com/federicolivarez/challengeMeli/config"
 )
 
 type Positions struct {
@@ -12,12 +13,14 @@ type Positions struct {
 
 func GetLocation(distancea,distanceb,distancec float64 )(*Positions) {
 
-	const xa float64 = -500
-	const ya float64 = -200
-	const xb float64 = -100
-	const yb float64 = 500
-	const xc float64 = 100.0
-	const yc float64 = 115.5
+	configuration := config.GetConfiguration()
+
+	var xa float64 = configuration.Satellites.Satellite_1_x
+	var ya float64 = configuration.Satellites.Satellite_1_y
+	var xb float64 = configuration.Satellites.Satellite_2_x
+	var yb float64 = configuration.Satellites.Satellite_2_y
+	var xc float64 = configuration.Satellites.Satellite_3_x
+	var yc float64 = configuration.Satellites.Satellite_3_y
 
 	var S float64 = (math.Pow(xc, 2.) - math.Pow(xb, 2.) + math.Pow(yc, 2.) - math.Pow(yb, 2.) + math.Pow(distanceb, 2.) - math.Pow(distancec, 2.)) / 2.0
 	var T float64 = (math.Pow(xa, 2.) - math.Pow(xb, 2.) + math.Pow(ya, 2.) - math.Pow(yb, 2.) + math.Pow(distanceb, 2.) - math.Pow(distancea, 2.)) / 2.0

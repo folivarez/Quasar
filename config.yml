@@ -1,0 +1,11 @@
+
+server:
+  port: 8080
+
+satellites:
+  satellite_1_x: -500
+  satellite_1_y: -200
+  satellite_2_x: -100
+  satellite_2_y: 500
+  satellite_3_x: 100.0
+  satellite_3_y: 115.5
