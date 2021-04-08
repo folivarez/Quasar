@@ -6,13 +6,11 @@ import (
 	"github.com/spf13/viper"
 )
 
-// Configurations exported
 type Configurations struct {
 	Server       ServerConfigurations
     Satellites   SatellitesrConfigurations
 }
 
-// ServerConfigurations exported
 type ServerConfigurations struct {
 	Port string
 }

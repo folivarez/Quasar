@@ -24,7 +24,7 @@ func GetLocation(c *fiber.Ctx) error {
         fmt.Println(err)
         return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
             "success":  false,
-            "message": "Cannot parse JSON",
+            "message": "No se puede calcular la posicion con la informacion recibida",
         })
     }
 

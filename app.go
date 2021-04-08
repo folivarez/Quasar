@@ -13,7 +13,7 @@ func setupRoutes(app *fiber.App) {
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusOK).JSON(fiber.Map{
 			"success": true,
-			"message": "You are at the endpoint 😉",
+			"message": "Welcome to Meli Challege Quasar 🚀",
 		})
 	})
 
@@ -22,7 +22,7 @@ func setupRoutes(app *fiber.App) {
 	api.Get("", func(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusOK).JSON(fiber.Map{
 			"success": true,
-			"message": "You are at the api endpoint 😉",
+			"message": "Welcome to Meli Challege Quasar 🚀",
 		})
 	})
 
