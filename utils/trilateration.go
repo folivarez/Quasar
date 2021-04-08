@@ -13,7 +13,7 @@ type Positions struct {
 
 func GetLocation(distancea,distanceb,distancec float64 )(*Positions) {
 
-	configuration := config.GetConfiguration()
+	configuration := config.GetConfiguration(".")
 
 	var xa float64 = configuration.Satellites.Satellite_1_x
 	var ya float64 = configuration.Satellites.Satellite_1_y

@@ -26,10 +26,10 @@ type SatellitesrConfigurations struct {
     Satellite_3_y float64
 }
 
-func GetConfiguration()(Configurations){
+func GetConfiguration(path string)(Configurations){
 
     viper.SetConfigName("config")
-	viper.AddConfigPath(".")
+	viper.AddConfigPath(path)
 	viper.AutomaticEnv()
 	viper.SetConfigType("yml")
 	var configuration Configurations

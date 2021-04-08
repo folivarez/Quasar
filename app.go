@@ -31,7 +31,7 @@ func setupRoutes(app *fiber.App) {
 
 func main() {
 	
-	configuration := config.GetConfiguration()
+	configuration := config.GetConfiguration(".")
 
 	app := fiber.New()
 	app.Use(logger.New())
