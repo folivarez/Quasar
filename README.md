@@ -71,13 +71,13 @@ Ejemplo Payload:
 
 Ejemplo respuesta 200:
 
-{
-    "message": "este es un mensaje secreto",
-    "position": {
-        "x": -312.1124559649421,
-        "y": 154.5355105513955
+    {
+        "message": "este es un mensaje secreto",
+        "position": {
+          "x": -312.1124559649421,
+            "y": 154.5355105513955
+        }
     }
-}
 
 Example failed 400 response
 
